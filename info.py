@@ -20,7 +20,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '20389440'))
 API_HASH = environ.get('API_HASH', 'a1a06a18eb9153e9dbd447cfd5da2457')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+BOT_TOKEN = environ.get('BOT_TOKEN', "6941086237:AAE_6l720Re0ihFaRs8SF473rtLH691IdoQ")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
@@ -68,7 +68,7 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'vj_bot_disscussion') # Support Chat 
 
 # True Or False
 PM_SEARCH = bool(environ.get('PM_SEARCH', True)) # In Pm Search Currently Spell Check Doesn't Work.
-SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', True))
+SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', False))
 VERIFY = bool(environ.get('VERIFY', False))
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
@@ -87,8 +87,8 @@ NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 # Shortlink Info
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'api.shareus.io')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'hRPS5vvZc0OGOEUQJMJzPiojoVK2')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', '')
+SHORTLINK_API = environ.get('SHORTLINK_API', '')
 
 # Others
 MAX_B_TN = environ.get("MAX_B_TN", "5")
